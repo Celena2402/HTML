@@ -1,0 +1,46 @@
+html {
+    background-color: coral;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+
+}
+
+h1 {
+    /*font-family: "Trebuchet MS", Verdana, sans-serif;*/
+    color: crimson;
+    font-style: italic;
+    /*border: 2px solid #000;
+    font-size: 20px;*/
+}
+
+h2 {
+    color:chartreuse;
+    font : bold italic 22px Times New Roman, serif;
+}
+
+.add:hover {
+    color: blueviolet;
+
+}
+ol {
+    font-size: 16px;
+    color: aqua;
+}
+
+ul {
+    font-size: 18px;
+    color: blue;
+}
+
+.cat {
+    width: 20%;
+    /*height: 200px;*/
+    border: 5px solid #528e96;
+    margin: 20px;
+}
+
+.cat2 {
+    width: 20%;
+    /*height: 100%;*/
+    border: 5px solid rgb(124, 36, 36);
+    margin: 30px;
+}

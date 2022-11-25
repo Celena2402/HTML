@@ -1,0 +1,19 @@
+.container_for_img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: black;
+}
+
+p {
+    color: red;
+}
+
+#purple_text {
+    color: purple;
+}
+
+#orange_text {
+    color: orangered;
+}
