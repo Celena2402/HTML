@@ -1,0 +1,29 @@
+html {
+    background-color: #f0ddaa;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    width: 1200px;   
+}
+
+p {
+    line-height: 20px;
+}
+
+.cat:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+.dog_2 {
+    width: 50%;    
+    border: 3px solid #528e96;
+    padding: 10px;        
+}
+
+figure {
+    display: block; 
+    float:left;   
+	text-align: center;    
+}
+
+figcaption {
+    font-size: 10px;
+}
