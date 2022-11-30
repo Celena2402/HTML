@@ -8,11 +8,11 @@
 Примечания: Пользователь всегда вводит корректное число.
 Советую округлить значение после рассчетов, так как в некоторых случаях может получиться "длинная дробь". */
 
-function degreesFahrenheit(t) {
-    return (9 / 5) * t + 32;
+function degreesFahrenheit(temperature) {
+    return (9 / 5) * temperature + 32;
 }
 
-const temperatureC = Number.parseInt(prompt('Введите температуру в градусах Цельсия : '));
+const temperatureC = Number.parseFloat(prompt('Введите температуру в градусах Цельсия : '));
 const temperatureF = degreesFahrenheit(temperatureC);
 
 alert(`Температура по Цельсию: ${temperatureC} С, по Фаренгейту: ${temperatureF.toFixed(2)} F`);
