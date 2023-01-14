@@ -15,6 +15,7 @@ body {
     display: block;    
     background:#f2f2f2;    
     font-family: 'Gilroy', 'Arial',sans-serif;
+    
 }   
 
 .t-body {
@@ -216,6 +217,8 @@ header {
             /*top: 170px;
             left: 23px;*/
             width: 100%;       
+            /*padding-bottom: 45px;*/
+            position: relative;
         }
             .title-name {                
                 margin-top: 6%;
@@ -227,7 +230,7 @@ header {
                 position: relative;
             }
                 .title-name-text {                    
-                    position: absolute;
+                    /*position: absolute;*/
                     line-height: 1.3;
                 }            
                     .title-name-text-h1 {
@@ -247,7 +250,7 @@ header {
                         z-index: 2;*/
                     }
                     .title-name-text-2 {
-                        margin-top: 130px;
+                        /*margin-top: 130px;*/
                         line-height: 1.3;    
                     }
                         .title-name-text-21 {
@@ -327,3 +330,70 @@ header {
                     /*padding: 54px;
                     width: 50%;float: right;*/
                 }
+.suggestions {
+    position: relative;
+    
+}
+        .suggestion {
+            /*
+            margin-right: auto;
+            margin-left: auto;flex-direction: column;display: block;
+            margin-top: 5%;
+            position: relative;
+            
+            height: 220px;*/
+            width: 100%;          
+            padding-top: 5%;
+            display: flex;
+            }
+            
+            /*.suggestion .suggestion-wrapper .suggestion-items {  
+                width: 50%; display: flex;
+            }
+                     */
+            .suggestion-items {
+                display: flex;
+                width: 50%;
+                
+              }
+              /*.works .works-wrapper .works-items .works-img {
+                height: 300px;
+              }*/
+              .suggestion-wrapper{
+                display: flex;
+
+              }
+              .suggestion .suggestion-wrapper .suggestion-items .suggestion-img img {
+                width: 115px;
+                height: 115px;
+              }
+              .suggestion-items:nth-child(1) {
+                margin-right: 5%;
+
+              }
+              .suggestion .suggestion-wrapper .suggestion-about {
+                color: black;
+                font-size: 16px;
+                
+              }
+              .suggestion-about {
+                margin-left: 3%;
+              }
+              .suggestion-img {
+                display:flex;
+                /*justify-content: center; центрируем элемент по горизонтали */
+                align-items: center;
+              }   
+              .suggestion-name {
+                display: block;
+                font-size: 1.17em;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: 600;
+                line-height: 27px;
+                /*font-size: 20px;*/
+              }
+              
+                

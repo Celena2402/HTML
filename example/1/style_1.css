@@ -1,0 +1,37 @@
+/** {
+  border: 1px solid red;
+  margin: 1px;
+}*/
+
+.works {
+    width: 100%;
+    display: flex;
+  }
+  
+  /*.works .works-wrapper .works-items {
+    width: 50%;
+  }*/
+  .works-items {
+    display: flex;
+    
+  }
+  /*.works .works-wrapper .works-items .works-img {
+    height: 300px;
+  }*/
+  
+  .works .works-wrapper .works-items .works-img img {
+    width: 100%;
+  }
+  
+  .works .works-wrapper .works-about {
+    color: black;
+  }
+  .works-about {
+    margin-left: 3%;
+  }
+  .works-img {
+    display:flex;
+    justify-content: center; /*центрируем элемент по горизонтали */
+    align-items: center;
+  }
+  

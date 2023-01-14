@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    src:url("./fonts/gilroy-Medium.ttf") format("truetype");
+}
+
+body {
+    font-size: 11px;
+    color: #333333;
+}
+#wrapper {
+    width: 500px;
+}
+.question {
+    font-weight: bold;
+}
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #fcfcfc;
+}
+textarea {
+    border: 1px solid #333333;
+    background-color: #f4f9ff;
+    width: 480px;
+    margin: 2px 10px;
+    font: 12px Gilroy;
+}
+textarea:focus {
+    border: 2px solid #1351b4;
+    background-color: #ffffff;
+}
+.tp {
+    margin-left: 10px;
+}
+.input {
+    border: 1px solid #333333;
+    height: 27px;
+    background-image: url(./images/image_4.png);
+    background-repeat: repeat-x;
+    width: 300px;
+    font: 12px Gilroy;
+    line-height: 27px;
+    padding: 0 7px;
+}
+.input:focus {
+    border: 2px solid #1351b4;
+    background: none;
+    background-color: #ffffff;
+}
+label {
+    cursor: pointer;
+}
