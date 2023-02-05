@@ -10,58 +10,64 @@
     <script src="./scripts/script.js" defer></script>
 </head>
 <body>
-    <div class="t-body">      
-        <main class="main">  <!-- Блок main, который включает всю нашу разметку-->  
-            <header class="header">   <!-- Блок header, который включает логотип и телефон-->
-                <img class="logo-foto" src="./images/image_2.png" alt="Логотип компании PROреклама">
-                
-                <div class="logo">
-                    <div class="logo-phone">
-                        <a href="tel: +7 (902) 327-32-04" class="phone1">+7 (902) 327-32-04</a>
-                        <p><a href="tel: +7 (902) 327-32-04" class="phone2">Заказать звонок</a></p>
+    <div class="t-body">   
+
+        <header class="header-title">
+            <div class="header-title-size">
+                <div class="header">   <!-- Блок header, который включает логотип и телефон-->
+                    <img class="logo-foto" src="./images/image_2.png" alt="Логотип компании PROреклама">
+                    
+                    <div class="logo">
+                        <div class="logo-phone">
+                            <a href="tel: +7 (902) 327-32-04" class="phone1">+7 (902) 327-32-04</a>
+                            <p><a href="tel: +7 (902) 327-32-04" class="phone2">Заказать звонок</a></p>
+                        </div>
+                        <div class="logo-button">
+                            <a class="button-logo" href="# " role="button">Получить консультацию</a>
+                        </div>
                     </div>
-                    <div class="logo-button">
-                        <a class="button-logo" href="# " role="button">Получить консультацию</a>
-                    </div>
+                </div> 
+
+                <div class="title">    <!-- Блок title, который включает текс в названии и фото-->           
+                    <div class="title-name">
+                        <div class="title-name-text">
+                            <p><H1 class="title-name-text-h1">
+                                Изготовим наружную рекламу
+                                <br>
+                                на собственном производстве
+                            </H1></p>
+                        </div>
+                        
+                        <div class="title-name-text-2">                        
+                            <strong class="title-name-text-21">От 1 дня </strong>
+                            <span class="title-name-text-22">любой сложности </span>
+                            <strong class="title-name-text-21">от 75 руб</strong>                        
+                        </div>
+                        
+                        <div class="title-name-text-3">
+                            <p class="title-name-text-31">Мы сами договоримся с администрацией и смонтируем сооружение</p>
+                        </div>
+                            
+                        <div class="title-name-button">
+                            <a href="#"><img class="title-name-button-foto" src="./images/Rectangle_3.png" alt="Узнать стоимость"></a>
+                            <p class="title-name-text-41">Узнайте сколько будет стоить создание <span>и получите дизайн макет бесплатно</span></p>
+                        </div>
+                        
+                        <div class="title-name-text-4">
+                            <img class="title-name-text-4-foto" src="./images/image_4.png">
+                            <p class="title-name-text-4-text">лет усердной работы, <span>больше 3000 довольных клиентов</span></p>  
+                        </div>
+                    </div>   
+
+                    <div class="title-name-foto">
+                        <img src="./images/image_1.png" class="title-foto">
+                    </div>                             
                 </div>
-            </header> 
-
-            <div class="title">    <!-- Блок title, который включает текс в названии и фото-->           
-                <div class="title-name">
-                    <div class="title-name-text">
-                        <p><H1 class="title-name-text-h1">
-                            Изготовим наружную рекламу
-                            <br>
-                            на собственном производстве
-                        </H1></p>
-                    </div>
-                    
-                    <div class="title-name-text-2">                        
-                        <strong class="title-name-text-21">От 1 дня </strong>
-                        <span class="title-name-text-22">любой сложности </span>
-                        <strong class="title-name-text-21">от 75 руб</strong>                        
-                    </div>
-                    
-                    <div class="title-name-text-3">
-                        <p class="title-name-text-31">Мы сами договоримся с администрацией и смонтируем сооружение</p>
-                    </div>
-                          
-                    <div class="title-name-button">
-                        <a href="#"><img class="title-name-button-foto" src="./images/Rectangle_3.png" alt="Узнать стоимость"></a>
-                        <p class="title-name-text-41">Узнайте сколько будет стоить создание <span>и получите дизайн макет бесплатно</span></p>
-                    </div>
-                    
-                    <div class="title-name-text-4">
-                        <img class="title-name-text-4-foto" src="./images/image_4.png">
-                        <p class="title-name-text-4-text">лет усердной работы, <span>больше 3000 довольных клиентов</span></p>  
-                    </div>
-                </div>   
-
-                <div class="title-name-foto">
-                    <img src="./images/image_1.png" class="title-foto">
-                </div>                             
             </div>
-             <!-- Второй Блок   -->              
+        </header>
+
+        <main class="main">  <!-- Блок main, который включает всю нашу разметку-->      
+            <!-- Второй Блок   -->              
                 
             <section class="suggestion">
                 <div class="suggestion-wrapper">
@@ -182,6 +188,7 @@
 
             </div>
 
+
 <!-- Шестой Блок   -->    
             <div class="our-work">
                 <h2 class="our-work-title">Наши работы</h2>
@@ -220,17 +227,23 @@
               <span class="dot" onclick="currentSlide(5)"></span> 
             </div>
 </div>
-            
+</main>            
 <!-- Седьмой Блок   -->    
-            <div class="clients">    
-                <div class="clients-title">
-                    <h2 class="clients-title-text">Мы любим наших клиентов</h2>
-                    
-                </div>        
+            <div class="clients">  
+                <div class="client"> 
+                    <div class="client-all">
+                        <div class="client-title">
+                            <div class="client-title-text">Мы любим наших клиентов</div>
+                            <div class="client-title-text2">Наши любимые клиенты, станьте как они</div>
+                        </div>     
+                        <div class="client-all-photos">
+                            <img class="client-all-photo" src="./images/8_1.png">
+
+                        </div>   
                 
 
-
-                            
+                </div>
+                </div>            
             </div>
 
 
@@ -243,7 +256,7 @@
 
 
 
-        </main>
+        
 
 
     </div>
