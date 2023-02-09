@@ -402,14 +402,11 @@ a:-webkit-any-link {
             position: relative;
             padding-top: 5%;
             padding-bottom: 5%;
-            background-color: aquamarine;
-            
-            /*
+            /*background-color: aquamarine;          
             margin-right: auto;
             margin-left: auto;flex-direction: column;display: block;
             margin-top: 5%;
-            position: relative;
-            
+            position: relative;            
             height: 220px;*/
             width: 100%;          
             /*padding-top: 5%;*/
@@ -470,16 +467,16 @@ a:-webkit-any-link {
 
         .showcase {
             position: relative;
-            background-color: #f6baba;
-            /*height: 550px;
+            /*background-color: #f6baba;
+            height: 550px;
             padding-top: 15%;
             padding-bottom: 15%;*/
             height: 550px;
-            background-position: center center;
+            /*background-position: center center;
             background-attachment: scroll;
             background-size: cover;
             background-repeat: no-repeat;
-            /*margin-left: 3%;
+            margin-left: 3%;
             margin-right: 3%;*/
             padding-left: 3%;
                 padding-right: 3%;
@@ -564,7 +561,7 @@ a:-webkit-any-link {
                             display: inline-block;
                             font-family: 'Gilroy', 'Arial',sans-serif;
                             color: #fff;
-                            padding: 22px 75px;
+                            padding: 12px 75px;
                             border-radius: 15px;                            
                             font-size: 0.55em;
                             /*font-size: 14px;*/
@@ -581,11 +578,11 @@ a:-webkit-any-link {
         .what-we-create {
             display: block;            
             position: relative;
-            background-color: rgb(180, 245, 245);
+            /*background-color: rgb(180, 245, 245);
             background-position: center center;
             background-attachment: scroll;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat;*/
             height: 780px;
             padding-top: 30px;
             /*padding-bottom: 50px;*/
@@ -658,11 +655,11 @@ a:-webkit-any-link {
         .cost-calculation{
             display: block;            
             position: relative;
-            background-color: rgb(231, 235, 235);
+            /*background-color: rgb(231, 235, 235);
             background-position: center center;
             background-attachment: scroll;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat;*/
             height: 780px;
             padding-top: 45px;
             padding-bottom: 45px;
@@ -729,12 +726,123 @@ a:-webkit-any-link {
                     float: left;
                     margin-left: 20px;
                     margin-right: 20px;
-                    width: 100px;                    
+                    width: 100%;                    
                 }
                     form {
                         display: block;
                         margin-top: 0;
                     }
+                        .form-text {
+                            display: block;
+                            width: 100%;                          
+                            /*vertical-align: middle;*/
+                            height: 100%;
+                            padding-right: 10px;
+                            font-size: 1.3em;
+                            line-height: 1.55;
+                            color: #000;
+                            font-family: 'Gilroy', 'Arial',sans-serif;
+                            font-weight: 300; 
+                            text-align: left;
+                        }
+                           .field {
+                                /*box-sizing: border-box;
+                                width: 640px;
+                                border: 1px solid #222222;
+                                padding: 15px 20px;*/
+                                outline: 0;
+                                padding-left: 0!important;
+                                padding-right: 0!important;
+                                border-top: 0!important;
+                                border-right: 0!important;
+                                border-left: 0!important;
+                                background-color: transparent!important;
+                                border-radius: 0!important;
+                                border-bottom: 1px solid;
+                                margin: 0;
+                                height: 60px;
+                                padding: 0 20px;
+                                font-size: 16px;
+                                line-height: 1.33;
+                                width: 100%;
+                                /*border: 0;*/
+                                -webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                                outline: 0;
+                                /*-webkit-appearance: none;*/
+                                border-radius: 0;
+                                font-family: 'Gilroy', 'Arial',sans-serif;
+                           }
+                        .form-name {
+                            margin-bottom: 25px;
+                            /*color: #000000;
+                            border: 1px solid #000000;*/
+                        }
+                            .form-name-buttom {
+                                margin-bottom: 35px;
+                            }
+                                .form-name-buttom-t {
+                                    margin-bottom: 10px;
+                                }
+                                    .form-name-buttom-tt {
+                                        position: relative;
+                                    }
+                                        .form-name-buttom-ttt {
+                                            color: #ffffff;
+                                            background-color: #ffba0c;
+                                            border-radius: 30px;
+                                            font-family: Gilroy, Arial, sans-serif;
+                                            font-size: 16px;
+                                            max-width: 250px;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            /*display: table;
+                                            padding: 0 20px;*/
+                                            line-height: 38px!important;
+                                            font-weight: 400;
+                                            white-space: nowrap;
+                                            text-align: center;
+                                            cursor: pointer;
+                                        }
+                        .form-buttom {
+                            display: block;
+                            text-align: center;
+                            /*vertical-align: middle;*/
+                            height: 100%;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+                        }  
+                            .form-buttom-t{
+                                position: relative;
+                            }
+                            .form-buttom-tt {
+                                color: #ffffff;
+                                background-color: #ffba0c;
+                                border-radius: 30px;
+                                /*-moz-border-radius: 30px;
+                                -webkit-border-radius: 30px;
+                                position: relative;*/
+                                overflow: hidden;
+                                isolation: isolate;
+                                text-align: center;
+                                height: 60px;
+                                border: 0;
+                                font-size: 16px;
+                                padding-left: 60px;
+                                padding-right: 60px;
+                                /*-webkit-appearance: none;*/
+                                font-weight: 700;
+                                white-space: nowrap;
+                                background-image: none;
+                                cursor: pointer;
+                                margin: 0;
+                                /*-webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;*/
+                                box-sizing: border-box;
+                                outline: 0;
+                                /*background: 0 0;*/
+                            }
 
 
             .cost-calculation-footer {
