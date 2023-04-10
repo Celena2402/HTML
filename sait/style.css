@@ -639,6 +639,12 @@ a:-webkit-any-link {
                             margin-right: auto;
                             
                         }
+                        .title-name-text-4-text {                            
+                            font-size: 0.9em;
+                        }
+                        .title-name-text-4-foto {                            
+                            padding-right: 7%;
+                        }
                     }
         /* .suggestions {
                 position: relative;
