@@ -1041,7 +1041,8 @@ a:-webkit-any-link {
             }
             .showcase-block-title-text {
                 width: 88%;
-                font-size: 1.125em;
+                font-size: 1.1em;
+                line-height: 20px;
             }
             .showcase-block-title-text-1 {
                 /* padding: 5%; */
@@ -1062,11 +1063,11 @@ a:-webkit-any-link {
             display: block;            
             position: relative;
             padding-top: 0px;            
-            height: 780px;
+            /*height: 780px;*/
         }
             .we-create-text{
                 position: relative;             
-                min-width:980px;max-width:1200px;
+                /*min-width:980px;max-width:1200px;*/
                 margin:0 auto;                    
                 text-align: center;
             }
@@ -1141,17 +1142,76 @@ a:-webkit-any-link {
                                 transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
                             }
             @media (min-width: 1060px) {
-                                                
+                .we-create-text{
+                    min-width:1060px;max-width:1200px;   
+                }                            
             }
-            @media (min-width: 768px)and (max-width:1059px) {
+            @media (min-width: 768px) and (max-width:1059px) {
+                .we-create-text{
+                    min-width:768px;max-width:1059px;  
+                }
+                .work {
+                    padding: 14px 15px;
+                }
+                .works {
+                    margin-top: 10px;
+                    
+                }
+                .work-name {
+                    font-size: 1.1em;
+                    height: 40px;
+                    line-height: normal;
+                }
+                a.button-work {
+                    line-height:0;
+                    padding: 17px 20px;
+                    font-size: 0.8em;
+                }    
                         
             }                                    
             @media (min-width: 481px) and (max-width:767px){
-                
+                .we-create-text{
+                    min-width:481px;max-width:767px;   
+                }
+                .work {
+                    width: 50%;
+                    padding: 20px 25px;
+                }
+                .works {
+                    margin-top: 15px;
+                }
+                .what-we-create-title {
+                    font-size: 2em;
+                    line-height: 0;
+                }
+                .work-name {
+                    font-size: 1em;
+                    height: 30px;
+                    line-height: normal;
+                }
+                a.button-work {
+                    line-height:0;
+                    padding: 17px 20px;
+                    font-size: 0.8em;
+                }   
             }
-            @media (max-width: 480px){                                             
-                        
+            @media (max-width: 480px){     
+                .we-create-text{
+                    max-width:480px;    
+                }
+                .works {
+                    margin-top: 0;                    
+                }                                        
+                .work {
+                    width: 60%;
+                    padding: 20px 25px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }       
+                .what-we-create-title {                   
+                    font-size: 1.6em;   
                     
+                }
             }
 
         .cost-calculation{
@@ -1164,14 +1224,14 @@ a:-webkit-any-link {
             background-repeat: no-repeat;*/
             height: 780px;
             padding-top: 45px;
-            padding-bottom: 45px;
+            /*padding-bottom: 45px;*/
             text-align: center;
             /*padding-left: 5%;
             padding-right: 5%;        */    
 
         }
             .cost-calculation-name {
-                max-width: 1200px;
+                /*max-width: 1200px;*/
                 margin-left: auto;
                 margin-right: auto;
                 padding: 0;
@@ -1204,14 +1264,14 @@ a:-webkit-any-link {
                         .cost-calculation-txt {
                             max-width: 560px;
                             margin: 0 auto;
-                            font-size: 1.5em;
+                            font-size: 1.3em;
                             line-height: 1.5;
                             color: #000;
                             font-family: 'Gilroy', 'Arial',sans-serif;
                             font-weight: 300; 
                         }
                             .cost-calculation-txt-text {
-                                font-size: 0.85em;
+                                /*font-size: 0.85em;*/
                                 line-height: 14px;
                             }
                 .cost-calculation-date{
@@ -1220,11 +1280,12 @@ a:-webkit-any-link {
                     margin-right: auto;
                     padding: 0;
                     width: 100%;
-                    text-align: center;*/
-                    max-width: 1200px;
+                    text-align: center;
+                    max-width: 1200px;*/
                     display: inline;
                     float: left;                    
                     width: 100%;
+                    margin-bottom: 5%;
                 }
                     .cost-calculation-input{
                         text-align: center;
@@ -1368,17 +1429,66 @@ a:-webkit-any-link {
                 }
 
         @media (min-width: 1060px) {
-                                    
+            .cost-calculation-name {
+                max-width: 1200px;              
+
+            }                      
         }
         @media (min-width: 768px)and (max-width:1059px) {
-                    
+            .cost-calculation-title {
+                font-size: 2.5em;
+                margin-bottom: 24px;
+            }
+            .cost-calculation-name-text {
+                margin-bottom: 50px;                
+            }   
+            .field, .form-buttom-tt{
+                height: 50px;
+            }
+            .cost-calculation-footer {
+                margin-top: 23px;
+            }     
         }                                    
         @media (min-width: 481px) and (max-width:767px){
+            .cost-calculation-title {
+                font-size: 2.3em;
+                margin-bottom: 20px;
+            }
+            .cost-calculation-txt-text {                
+                font-size: 0.75em;
+            }
+            .cost-calculation-name-text {
+                margin-bottom: 40px;                
+            }   
+            .field, .form-buttom-tt{
+                height: 50px;
+            }
+            .cost-calculation-footer {
+                margin-top: 20px;
+            } 
             
         }
         @media (max-width: 480px){                                             
-                    
-                
+            .cost-calculation-title {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+            .cost-calculation-txt-text {                
+                font-size: 0.7em;
+            }
+            .cost-calculation-name-text {
+                margin-bottom: 30px;                
+            }   
+            .field, .form-buttom-tt{
+                height: 40px;
+            }
+            .cost-calculation-footer {
+                margin-top: 20px;
+            }     
+            .form-name-buttom-ttt {
+                max-width: 200px;   
+                line-height: 28px!important;
+            } 
         }
 
         .our-work{
@@ -1522,18 +1632,32 @@ a:-webkit-any-link {
                 .prev, .next,.text {font-size: 11px}
                 }*/
 
-    @media (min-width: 1060px) {
-                                                    
-    }
-    @media (min-width: 768px)and (max-width:1059px) {
-                
-    }                                    
+    
+                                       
     @media (min-width: 481px) and (max-width:767px){
-        
+        .slideshow-container {
+            min-width: 481px;
+            max-width:767px;
+        }
+        .our-work-title {
+            font-size: 2.3em;
+        }
+        .slider-foto {
+            width: 350px;
+            height: auto;
+        }        
     }
     @media (max-width: 480px){                                             
-                
-            
+        .slideshow-container {
+            max-width:480px;
+        }
+        .our-work-title {
+            font-size: 1.5em;
+        }
+        .slider-foto {
+            width: 330px;
+            height: auto;
+        }                  
     }
 
 
@@ -1643,16 +1767,78 @@ a:-webkit-any-link {
                                 margin: 0;                                
                             }
     @media (min-width: 1060px) {
-                                        
+        /*.client {            
+            min-width:980px;max-width:1200px;         
+        }   */                                     
     }
     @media (min-width: 768px)and (max-width:1059px) {
-                
+        .client {            
+            min-width:786px;max-width:1059px;             
+        } 
+        .client-title-text {            
+            font-size: 2.5em;
+        } 
+        .clients-photo {
+            flex-wrap: wrap;
+        }
+        .client-all-photos {
+            width: 25%;
+        }  
+        .client-all-photo {
+            width: 60%;
+        }   
     }                                    
     @media (min-width: 481px) and (max-width:767px){
         
+        .client {            
+            min-width:481px;max-width:767px;             
+        } 
+        .client-all {           
+            padding: 100px 0 80px;
+        }
+        .client-title-text {            
+            font-size: 2em;
+        } 
+        .clients-photo {
+            flex-wrap: wrap;
+        }
+        .client-all-photos {
+            width: 50%;
+            padding: 0;
+        }  
+        .client-all-photo {
+            width: 50%;
+        }   
+        .client-title-text2 {
+            line-height: 2;
+        }
+        
     }
     @media (max-width: 480px){                                             
-                
+        .client {            
+            max-width: 480px;
+            min-width: 320px;             
+        } 
+        .client-all {           
+            padding: 100px 0 80px;
+        }
+        .client-title-text {            
+            font-size: 1.5em;
+        } 
+        .clients-photo {
+            flex-wrap: wrap;
+        }
+        .client-all-photos {
+            width: 50%;
+            padding: 0;
+        }  
+        .client-all-photo {
+            width: 70%;
+        }   
+        .client-title-text2 {
+            line-height: 2;
+            font-size: 0.9em;
+        }        
             
     }
 
@@ -1662,11 +1848,12 @@ a:-webkit-any-link {
         padding-top: 0px;
         /*width: 100%;*/
         background-color: #000;    
-        height: 500px;
+        /*height: 500px;*/
+        height: auto;
     }
         .contacts{            
             position: relative;             
-            min-width:980px;max-width:1200px;
+            /*min-width:980px;max-width:1200px;*/
             margin:0 auto;                    
             text-align: center;
             
@@ -1684,7 +1871,7 @@ a:-webkit-any-link {
             }
             
                 .contact-maps {
-                    display: flex;
+                    /*display: flex;*/
                     float:left;
                     width: 50%;
                     background-color: #999999
@@ -1695,7 +1882,7 @@ a:-webkit-any-link {
                     }
                 
                 .contacts-title {
-                    display: flex;
+                    /*display: flex;*/
                     width: 50%;
                     height: 453px;
                     background-color: #000000
@@ -1776,16 +1963,45 @@ a:-webkit-any-link {
                             }
 
                             @media (min-width: 1060px) {
+                                .contacts{    
+                                    min-width:980px;max-width:1200px;               
+                                }
                                                                 
                             }
                             @media (min-width: 768px)and (max-width:1059px) {
-                                       
+                                .contacts{    
+                                    min-width:768px;max-width:1059px;               
+                                }       
                             }                                    
-                            @media (min-width: 481px) and (max-width:767px){
-                              
+                            @media (min-width: 670px) and (max-width:767px){
+                                .contacts{    
+                                    min-width:481px;max-width:767px;               
+                                }
+                                .contacts-title-name {
+                                    padding: 30px;
+                                    width: 80%;
+                                } 
                             }
-                            @media (max-width: 480px){                                             
-                                        
-                                   
+                            @media (max-width: 669px){                                             
+                                .contacts{    
+                                    max-width:480px;               
+                                }                                        
+                                .contact {
+                                    flex-wrap: wrap;
+                                }
+                                .contact-maps {                                    
+                                    width: 100%;
+                                }
+                                .contact-maps-title {
+                                    width: 200px;
+                                    height: 200px;
+                                } 
+                                .contacts-title {
+                                    width: 100%;
+                                } 
+                                .contacts-title-name {
+                                    padding: 30px;
+                                    width: 80%;
+                                }  
                             }
                        
