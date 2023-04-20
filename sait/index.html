@@ -7,7 +7,7 @@
     <title>Изготовим наружную рекламу на собственном производстве - PROреклама</title>
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>
 </head>
 <body>
     <div class="t-body">   
@@ -23,7 +23,7 @@
                             <p><a href="tel: +7 (902) 327-32-04" class="phone2">Заказать звонок</a></p>
                         </div>
                         <div class="logo-button">
-                            <a class="button-logo" href="# " role="button">Получить консультацию</a>
+                            <a class="button-logo" href="#click" role="button">Получить консультацию</a>
                         </div>
                     </div>
                 </div> 
@@ -349,7 +349,9 @@
                 <div class="contact">
                     <div class="contact-maps">
                         <div class="contact-maps-title">
+                            <div id="map">
 
+                            </div>
                         </div>
                     </div>
                     <div class="contacts-title">
@@ -398,11 +400,54 @@
                     </div>
                 </div>                
             </div> 
-        </footer>
+        </footer>     
 
+
+    </div>  
+
+<!-- Модальное окно -->
+    <div class="modalBackground">
+        <div class="modalActive">
+            <div class="modalClose">
+                <img src="modalCross.svg" />
+            </div>
+            <div class="modalWindow"></div>
+        </div>
+        <script src="./scripts/modalscript.js" defer></script>
+    </div>
+
+<!-- Настройка карты -->
+    <script type="text/javascript">
+
+        ymaps.ready(init); 
+        var myMap;
         
-
-
-    </div>    
+        function init() {
+        
+            myMap = new ymaps.Map("map", {
+                center: [56.133409586055016,47.291620873016335], // Координаты центра карты
+                zoom: 16 // Маштаб карты
+            }); 
+        
+            myMap.controls.add(
+                new ymaps.control.ZoomControl()  // Добавление элемента управления картой
+            ); 
+        
+            myPlacemark = new ymaps.Placemark([56.133409586055016,47.291620873016335], { // Координаты метки объекта
+                balloonContent: "<div class='ya_map'>PROреклама<br>Калинина 111/1<br>tel: +7 (902) 327-32-04</div>" // Подсказка метки
+            }, {
+                preset: "twirl#redDotIcon" // Тип метки
+               /* iconLayout: "default#image",
+                iconImageHref: "./images/image_2.png", // Ссылка на изображение 
+                iconImageSize: [100, 50], // Размер изображения 
+                iconImageOffset: [-3, -42] // Положение изображени*/
+            });
+            
+            myMap.geoObjects.add(myPlacemark); // Добавление метки
+            myPlacemark.balloon.open(); // Открытие подсказки метки
+            
+        };
+        
+    </script>
 </body>
 </html>
