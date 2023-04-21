@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Изготовим наружную рекламу на собственном производстве - PROреклама</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>
 </head>
@@ -23,7 +24,7 @@
                             <p><a href="tel: +7 (902) 327-32-04" class="phone2">Заказать звонок</a></p>
                         </div>
                         <div class="logo-button">
-                            <a class="button-logo" href="#click" role="button">Получить консультацию</a>
+                            <a class="button-logo" href="modal" role="button">Получить консультацию</a>
                         </div>
                     </div>
                 </div> 
@@ -277,23 +278,43 @@
 
             <div class="slideshow-container">
               <div class="mySlides fade">                
-                <img class="slider-foto" src="./images/6_1.png">                
+                <img class="slider-foto" src="./images/6_1.jpg">                
               </div>
 
               <div class="mySlides fade">                
-                <img class="slider-foto" src="./images/6_2.png">                
+                <img class="slider-foto" src="./images/6_2.jpg">                
               </div>
 
               <div class="mySlides fade">                
-                <img class="slider-foto" src="./images/6_3.png">                
+                <img class="slider-foto" src="./images/6_3.jpg">                
               </div>
 
               <div class="mySlides fade">                
-                <img class="slider-foto" src="./images/6_4.png">                
+                <img class="slider-foto" src="./images/6_4.jpg">                
               </div>
 
               <div class="mySlides fade">                
-                <img class="slider-foto" src="./images/6_5.png">                
+                <img class="slider-foto" src="./images/6_5.jpg">                
+              </div>
+
+              <div class="mySlides fade">                
+                <img class="slider-foto" src="./images/6_6.jpg">                
+              </div>
+
+              <div class="mySlides fade">                
+                <img class="slider-foto" src="./images/6_7.jpg">                
+              </div>
+
+              <div class="mySlides fade">                
+                <img class="slider-foto" src="./images/6_8.jpg">                
+              </div>
+
+              <div class="mySlides fade">                
+                <img class="slider-foto" src="./images/6_9.jpg">                
+              </div>
+
+              <div class="mySlides fade">                
+                <img class="slider-foto" src="./images/6_10.jpg">                
               </div>
 
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -301,11 +322,16 @@
             
                 <br>
                 <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
-                <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                    <span class="dot" onclick="currentSlide(9)"></span> 
+                    <span class="dot" onclick="currentSlide(10)"></span> 
                 </div>
                 <script src="./scripts/script.js" defer></script>
             </div>
@@ -341,7 +367,6 @@
                 </div>
             </div>            
         </div>
-
 
 <!-- Восьмой Блок   -->    
         <footer>
@@ -406,33 +431,45 @@
     </div>  
 
 <!-- Модальное окно -->
-    <div class="modalBackground">
-        <div class="modalActive">
-            <div class="modalClose">
-                <img src="modalCross.svg" />
+<!--
+    <div class="vmodal">
+        <div class="modal-overlay">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <span class="modal-title">Modal title</span>
+                    <span class="modal-close">&times</span> 
+
+                </div>
+                <div class="modal-boby">
+                    <p>Lorem 1</p>
+                    <p>Lorem 1</p>
+                </div>
+                <div class="modal-footer">
+                    <button>Ok</button>
+                    <button>Cancel</button>
+                </div>
+
             </div>
-            <div class="modalWindow"></div>
         </div>
-        <script src="./scripts/modalscript.js" defer></script>
-    </div>
+
+    </div> -->   
+        <script src="./scripts/modalscript.js"></script>
+        <script src="./scripts/plugins/modal.js"></script>
+        <script src="./scripts/index.js"></script>
+   
 
 <!-- Настройка карты -->
     <script type="text/javascript">
-
         ymaps.ready(init); 
-        var myMap;
-        
-        function init() {
-        
+        var myMap;        
+        function init() {        
             myMap = new ymaps.Map("map", {
                 center: [56.133409586055016,47.291620873016335], // Координаты центра карты
                 zoom: 16 // Маштаб карты
-            }); 
-        
+            });         
             myMap.controls.add(
                 new ymaps.control.ZoomControl()  // Добавление элемента управления картой
-            ); 
-        
+            );         
             myPlacemark = new ymaps.Placemark([56.133409586055016,47.291620873016335], { // Координаты метки объекта
                 balloonContent: "<div class='ya_map'>PROреклама<br>Калинина 111/1<br>tel: +7 (902) 327-32-04</div>" // Подсказка метки
             }, {
@@ -441,13 +478,11 @@
                 iconImageHref: "./images/image_2.png", // Ссылка на изображение 
                 iconImageSize: [100, 50], // Размер изображения 
                 iconImageOffset: [-3, -42] // Положение изображени*/
-            });
-            
+            });            
             myMap.geoObjects.add(myPlacemark); // Добавление метки
-            myPlacemark.balloon.open(); // Открытие подсказки метки
-            
-        };
-        
+            myPlacemark.balloon.open(); // Открытие подсказки метки            
+        };        
     </script>
+
 </body>
 </html>
