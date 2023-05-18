@@ -45,6 +45,11 @@ img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
+button:hover,
+button:focus {
+  border-color: #fdb500;
+  background-color: #ffcb46;
+}
 /*
 *,
 *::before,
@@ -1345,7 +1350,8 @@ a:-webkit-any-link {
                                 font-weight: 300; 
                                 text-align: left;
                             }
-                            .field {
+                            
+                            .field, .phone {
                                     /*box-sizing: border-box;
                                     width: 640px;
                                     border: 1px solid #222222;
@@ -1378,7 +1384,10 @@ a:-webkit-any-link {
                                 margin-bottom: 25px;
                                 /*color: #000000;
                                 border: 1px solid #000000;*/
-                            }
+                            }                       
+                                                       
+                             
+
                                 .form-name-buttom {
                                     margin-bottom: 35px;
                                 }

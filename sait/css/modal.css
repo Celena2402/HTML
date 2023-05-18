@@ -267,7 +267,7 @@ p.modal-header {
     font-weight: 300; 
     text-align: left;
 }
-.modal-field {        
+.modal-field, .modal-phone {        
         outline: 0;        
         background-color: transparent!important;        
         

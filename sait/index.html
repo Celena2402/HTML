@@ -154,14 +154,14 @@
                     <div class="what-we-create">
                         <h2 class="what-we-create-title">Что мы создаем</h2>
                         <div class="works">
-                            <div class="work">
+                            <div class="work signboards">
                                 <img src="./images/4_1.png" class="work-photo" alt="Вывески">
                                 <span class="work-name">Вывески</span>
                                  <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                 <button id="callback-button-4" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
-                            <div class="work">
+                            <div class="work letters">
                                 <img src="./images/4_2.jpg" class="work-photo" alt="Объемные буквы">
                                 <span class="work-name">Объемные буквы</span>
                                  <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
@@ -234,22 +234,23 @@
                                 <div>
                                     <form class="form">
                                         <div class="form-name">
-                                            <span class="form-text">Ваше имя</span>
-                                            <input type="text" class="field" placeholder="Ваше имя">
+                                            <label for="name" class="form-text">Ваше имя</label>
+                                            <input type="text" id="name" class="field" placeholder="Ваше имя" required >
+                                        </div>                                       
+                        
+                                        <div class="form-name">
+                                            <label for="phone" class="form-text">Ваш номер телефона</label>
+                                            <input type="text" id="phone" class="phone" placeholder="Ваш номер телефона" required>  
                                         </div>
                                         <div class="form-name">
-                                            <span class="form-text">Ваш номер телефона</span>
-                                            <input type="text" class="field" placeholder="Ваш номер телефона">
+                                            <slabel for="email" class="form-text">E-mail</label>
+                                            <input type="email" id="email" class="field" placeholder="E-mail">
                                         </div>
-                                        <div class="form-name">
-                                            <span class="form-text">E-mail</span>
-                                            <input type="text" class="field" placeholder="E-mail">
-                                        </div>
-                                        <div class="form-name">
-                                            <span class="form-text">У Вас есть макет? Загрузите его:</span>
+                                        <div class="form-name">                                             
+                                                <span class="form-text">У Вас есть макет? Загрузите, если есть</span>                                        
                                             <div class="form-name-buttom">
                                                 <div class="form-name-buttom-t">
-                                                    <div class="form-name-buttom-tt">
+                                                    <div class="form-name-buttom-tt">                                                        
                                                         <div class="form-name-buttom-ttt">
                                                             Загрузить файлы
                                                         </div>
@@ -258,14 +259,17 @@
 
                                                 </div>
                                             </div>
-                                        </div>                                        
+                                        </div> 
+
                                         <div class="form-buttom">
                                             <div class="form-buttom-t">
-                                                <button type="submit" class="form-buttom-tt">
-                                                    Узнать стоимость
-                                                </button>
+                                                <input type="submit" class="form-buttom-tt" value="Узнать стоимость">        
                                             </div>
                                         </div>
+
+                                        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+                                        <script src="./scripts/script-phone.js"></script>
 
                                         <script src=""></script>
                                     </form>
@@ -450,7 +454,9 @@
         <button class="modal__close-button"><img src="./images/close.png" width="18" alt=""></button>
         <!-- Контент модального окна -->
             <div class="modal-header">
-                <h4 class="modal-title">Title</h4>
+                <!--<h4 class="modal-title signboards">Вывески</h4>
+                <h4 class="modal-title letters">Объемные буквы</h4>-->
+                <h4 class="modal-title">Консультация</h4>
                 <!--<span class="modal-title">Консультация</span>
                 <span>&times;</span>-->
                 <br><br>
@@ -460,22 +466,29 @@
             <div class="modal-boby" data-content>  
                 <form class="modal-form">
                     <div class="modal-form-name">
-                        <span class="modal-form-text">Ваше имя</span>
-                        <input type="text" class="modal-field" placeholder="Ваше имя">
+                        <label for="name" class="modal-form-text">Ваше имя</label>
+                        <input type="text" id="name" class="modal-field" placeholder="Ваше имя" required>
                     </div>
-                    <div class="modal-form-name">                
-                        <input type="text" class="modal-field" placeholder="Ваш номер телефона">
+                    <div class="modal-form-name">       
+                        <label for="phone" class="modal-form-text">Ваш телефон</label>         
+                        <input type="text" id="phone" class="modal-phone" placeholder="Ваш номер телефона" required>
                     </div>
+                    <div class="modal-footer">
+                <input type="submit" id="close-modal" class="modal-button" value="Оставить заявку">                          
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/script-modal.js" defer></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="./scripts/script-phone.js"></script>
                 </form>
             </div>
-            <div class="modal-footer">
-                <button id="close-modal" class="modal-button">Оставить заявку</button>                
-            </div>
+            
     </div>
     
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./scripts/script-modal.js" defer></script>
+    
 </div>
 <!--
     <div class="vmodal">
