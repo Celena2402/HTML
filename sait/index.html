@@ -156,56 +156,56 @@
                         <div class="works">
                             <div class="work signboards">
                                 <img src="./images/4_1.png" class="work-photo" alt="Вывески">
-                                <span class="work-name">Вывески</span>
+                                <h3 class="work-name">Вывески</h3>
                                  <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                 <button id="callback-button-4" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
                             <div class="work letters">
                                 <img src="./images/4_2.jpg" class="work-photo" alt="Объемные буквы">
-                                <span class="work-name">Объемные буквы</span>
+                                <h3 class="work-name">Объемные буквы</h3>
                                  <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                  <button id="callback-button-5" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
                             <div class="work">
                                 <img src="./images/4_3.png" class="work-photo" alt="Световые короба">
-                                <span class="work-name">Световые короба</span>
+                                <h3 class="work-name">Световые короба</h3>
                                 <!-- <a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                 <button id="callback-button-6" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
                             <div class="work">
                                 <img src="./images/4_4.png" class="work-photo" alt="Кронштейны">
-                                <span class="work-name">Кронштейны</span>
+                                <h3 class="work-name">Кронштейны</h3>
                                 <!-- <a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                 <button id="callback-button-7" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                     
                             <div class="work">
                                 <img src="./images/4_5.png" class="work-photo" alt="Указатели">
-                                <span class="work-name">Указатели</span>
+                                <h3 class="work-name">Указатели</h3>
                                 <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                 <button id="callback-button-8" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
                             <div class="work">
                                 <img src="./images/4_6.png" class="work-photo" alt="Стенды">
-                                <span class="work-name">Вывески</span>
+                                <h3 class="work-name">Вывески</h3>
                                  <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                  <button id="callback-button-9" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
                             <div class="work">
                                 <img src="./images/4_7.png" class="work-photo" alt="Таблички">
-                                <span class="work-name">Таблички</span>
+                                <h3 class="work-name">Таблички</h3>
                                  <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                  <button id="callback-button-10" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
                         
                             <div class="work">
                                 <img src="./images/4_8.png" class="work-photo" alt="Оформление витрин">
-                                <span class="work-name">Оформление витрин</span>
+                                <h3 class="work-name">Оформление витрин</h3>
                                 <!--<a class="button-work" href="# " role="button">Оставить заявку</a>-->
                                 <button id="callback-button-11" class="button-work get-modal_1">Оставьте заявку</button>
                             </div>
@@ -232,19 +232,19 @@
                         <div class="cost-calculation-date">
                             <div class="cost-calculation-input">
                                 <div>
-                                    <form class="form">
+                                    <form action="send.php" class="form" method="post">
                                         <div class="form-name">
                                             <label for="name" class="form-text">Ваше имя</label>
-                                            <input type="text" id="name" class="field" placeholder="Ваше имя" required >
+                                            <input type="text" id="name" name="name" class="field" placeholder="Ваше имя" required >
                                         </div>                                       
                         
                                         <div class="form-name">
                                             <label for="phone" class="form-text">Ваш номер телефона</label>
-                                            <input type="text" id="phone" class="phone" placeholder="Ваш номер телефона" required>  
+                                            <input type="text" id="phone" name="phone" class="phone" placeholder="Ваш номер телефона" required>  
                                         </div>
                                         <div class="form-name">
                                             <slabel for="email" class="form-text">E-mail</label>
-                                            <input type="email" id="email" class="field" placeholder="E-mail">
+                                            <input type="email" id="email" name="email" class="field" placeholder="E-mail">
                                         </div>
                                         <div class="form-name">                                             
                                                 <span class="form-text">У Вас есть макет? Загрузите, если есть</span>                                        
@@ -263,15 +263,16 @@
 
                                         <div class="form-buttom">
                                             <div class="form-buttom-t">
-                                                <input type="submit" class="form-buttom-tt" value="Узнать стоимость">        
+                                                <!--<input type="submit" class="form-buttom-tt" value="Узнать стоимость">        -->
+                                                <button type="button" class="form-buttom-tt">Узнать стоимость</button>
                                             </div>
                                         </div>
+                                        <div class="status"></div>
 
                                         <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
                                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-                                        <script src="./scripts/script-phone.js"></script>
-
-                                        <script src=""></script>
+                                       <!-- <script src="./scripts/script-phone.js"></script> -->
+                                        <script src="./scripts/script-email.js"></script>
                                     </form>
                                 </div>
                                 
@@ -474,14 +475,15 @@
                         <input type="text" id="phone" class="modal-phone" placeholder="Ваш номер телефона" required>
                     </div>
                     <div class="modal-footer">
-                <input type="submit" id="close-modal" class="modal-button" value="Оставить заявку">                          
-            </div>
+                       <!-- <input type="button" id="close-modal" class="modal-button" value="Оставить заявку">    -->
+                       <button type="button" id="close-modal" class="modal-button">Оставить заявку</button>                     
+                    </div>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./scripts/script-modal.js" defer></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-    <script src="./scripts/script-phone.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="./scripts/script-modal.js" defer></script>
+                    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+                    <script src="./scripts/script-phone.js"></script>
                 </form>
             </div>
             

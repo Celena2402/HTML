@@ -317,3 +317,7 @@ p.modal-header {
     /*-webkit-border-radius: 5px;*/
     border: 0;
 }
+
+form input.error {
+    border-color: #ff0000;
+}

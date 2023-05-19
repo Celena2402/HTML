@@ -1385,8 +1385,12 @@ a:-webkit-any-link {
                                 /*color: #000000;
                                 border: 1px solid #000000;*/
                             }                       
-                                                       
-                             
+                            form input.error {
+                                border-color: #ff0000;
+                            }                           
+                            label.error {
+                                display: none!important;
+                            } 
 
                                 .form-name-buttom {
                                     margin-bottom: 35px;
