@@ -1384,7 +1384,8 @@ a:-webkit-any-link {
                                 margin-bottom: 25px;
                                 /*color: #000000;
                                 border: 1px solid #000000;*/
-                            }                       
+                            }       
+                                            
                             form input.error {
                                 border-color: #ff0000;
                             }                           
