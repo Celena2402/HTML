@@ -1260,8 +1260,8 @@ a:-webkit-any-link {
             background-repeat: no-repeat;*/
             height: 780px;
             padding-top: 45px;
-            /*padding-bottom: 45px;*/
-            text-align: center;
+            /*padding-bottom: 45px;
+            text-align: center;*/
             /*padding-left: 5%;
             padding-right: 5%;        */    
 
@@ -1324,8 +1324,8 @@ a:-webkit-any-link {
                     margin-bottom: 5%;
                 }
                     .cost-calculation-input{
-                        text-align: center;
-                        /*padding-left: 200px;*/
+                        /*text-align: center;
+                        padding-left: 200px;*/
                         width: 70%;
                         display: inline;
                         float: left;
@@ -1393,17 +1393,14 @@ a:-webkit-any-link {
                                 display: none!important;
                             } 
 
-                                .form-name-buttom {
-                                    margin-bottom: 35px;
-                                }
+                                
                                     .form-name-buttom-t {
-                                        margin-bottom: 10px;
+                                        margin-bottom: 30px;   
                                     }
-                                        .form-name-buttom-tt {
-                                            position: relative;
-                                        }
-                                            .form-name-buttom-ttt {
-                                                color: #ffffff;
+                                        .form-name-buttom-tt .form-name-buttom-tttt{
+                                                
+                                            color: #ffffff;
+                                                position: relative;
                                                 background-color: #ffba0c;
                                                 border-radius: 30px;
                                                 font-family: Gilroy, Arial, sans-serif;
@@ -1411,14 +1408,24 @@ a:-webkit-any-link {
                                                 max-width: 250px;
                                                 overflow: hidden;
                                                 text-overflow: ellipsis;
-                                                /*display: table;
-                                                padding: 0 20px;*/
+                                                display: block;
+                                                /*padding: 0 20px;*/
                                                 line-height: 38px!important;
                                                 font-weight: 400;
                                                 white-space: nowrap;
                                                 text-align: center;
                                                 cursor: pointer;
-                                            }
+                                                content: '';
+
+                                        }
+                                        .form-name-buttom-ttt{
+                                            position: absolute;
+                                            opacity: 0;
+
+                                        }  
+                                       
+
+                                           
                             .form-buttom {
                                 display: block;
                                 text-align: center;
