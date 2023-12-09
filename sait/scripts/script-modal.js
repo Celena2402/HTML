@@ -1,3 +1,8 @@
+$("button.button-work").click(function(a) {
+  $('#modal p').text($(this).attr("title"));
+  $('#modal').show();
+});
+
 document.addEventListener('DOMContentLoaded', () => {  
  
     // Кнопка по которой происходит клик

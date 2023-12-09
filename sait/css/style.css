@@ -1386,12 +1386,14 @@ a:-webkit-any-link {
                                 border: 1px solid #000000;*/
                             }       
                                             
-                            form input.error {
-                                border-color: #ff0000;
-                            }                           
-                            label.error {
-                                display: none!important;
-                            } 
+                            .form__error {
+                                font-size: .875rem;
+                            }
+                            .form__description {
+                                display: none;
+                                text-align: center;
+                                font-size: 18px;
+                            }
 
                                 
                                     .form-name-buttom-t {
